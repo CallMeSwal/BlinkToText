@@ -2,18 +2,18 @@ from twilio.rest import Client
 
 #authentication
 def send(msg):
-    account_sid="AC12a2dc75eec3d322ff19e18088b06d26"
-    auth_token="031659c7ed42adbe34164d4dfacbbe3c"
+    account_sid="ACC_SID" #fill in appropriately
+    auth_token="AUTH_TKN" #fill in appropriately
     client=Client(account_sid, auth_token)
     if msg:
         client.messages.create(
-        to="+16476094668", 
-        from_="+16479313347",
+        to="+16471231234", #fill in appropriately
+        from_="+16471231234", #fill in appropriately
         body=msg)
     else:
         client.messages.create(
-        to="+16476094668", 
-        from_="+16479313347",
-        body="Please come to my room.")
+        to="+16471231234", #fill in appropriately
+        from_="+16471231234",#fill in appropriately
+        body="Default Message")#fill in appropriately
         
     
