@@ -21,10 +21,9 @@ Many companies are developing technologies that are controlled by eye movement. 
 Blink to Text is free open source software. It is distributed under the MIT Permissive Free Software License. All of the code is available on Github. A majority of the software is written in Python. Specifically, the image processing is done with Python’s OpenCV library and the GUI was made with PyQT. Python is an open source programming language. This means that all .exe and other distributables of the software can be decompiled. All of the Haar Cascades were obtained from OpenCV’s repository of free and open source Haar Cascades. 
 
 ### Platform Features
-![alt text]([http://url/to/img.png](https://lh3.googleusercontent.com/LcweB7P68qWeaXDLmjq2jUltu5MUxL7g4VWYMYrcffJN84zrEJeWVs65nmkW1Fk8WphVAYnmC0GNioDjCGXd9v_hR954oK_K5fIQbjIpw3HTmOhlVyyhzANmwPX_pfyYBjBJANlU))
 BlinkToText offers a range a tools to help paralyzed people communicate. Below is an explanation of the platform’s main features.
 
-
+![plot](./readme_img/guiOverview.png)
 
 [Figure 1: BlinkToText GUI]
 
@@ -174,33 +173,7 @@ The relationship between distance and the accuracy of the blink detector was cal
 4. Step 3 was repeated 5 times with distances of 60 cm, 90 cm, 120 cm, 150 cm, and 180 cm.
 5. The BlinkDetector accuracy was plotted on a bar graph.
 
-### Observations
 
-#### Words Per Minute
-
-[Table 1: Chart of WPM series]
-|                                      | Test #1       | Test #2 | Test #3 | Test #4 | Test #5 |
-| ------------------------------------ |:-------------:| -------:| -------:| -------:| -------:|
-| Number of Words Blinked in 5 Minutes | 10            | 11      | 10      | 10      | 8       |
-| WPM                                  | 2             | 2.2     | 2       | 2       | 1.6     |
-
-[Figure 14: Scatter-Plot of Words Per Minute Series]
-
-WPMave=1.96, On average user could blink 1.96 words per minute.
-
-#### Distance Vs. Blink Error
-
-[Table 2: Chart of Distance Vs. Blink Error Table]
-| Distance From Screen (cm) | Total Number of Intentional Blinks (Blinks) | Number of Intentional Blinks Detected (Blinks) | Blink Error (%) |
-| ------------------------- |:-------------------------------------------:| ----------------------------------------------:| ---------------:|
-| 30                        | 20                                          | 20                                             | 0.00            |
-| 60                        | 20                                          | 20                                             | 0.00            |
-| 90                        | 20                                          | 16                                             | 20.00           |
-| 120                       | 20                                          | 13                                             | 35.00           |
-| 150                       | 20                                          | 9                                              | 55.00           |
-| 180                       | 20                                          | 1                                              | 45.00           |
-
-[Figure 15: Graph of Distance Vs. Blink Error]
 
 ### Hardware
 
