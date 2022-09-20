@@ -21,6 +21,7 @@ Many companies are developing technologies that are controlled by eye movement. 
 Blink to Text is free open source software. It is distributed under the MIT Permissive Free Software License. All of the code is available on Github. A majority of the software is written in Python. Specifically, the image processing is done with Python’s OpenCV library and the GUI was made with PyQT. Python is an open source programming language. This means that all .exe and other distributables of the software can be decompiled. All of the Haar Cascades were obtained from OpenCV’s repository of free and open source Haar Cascades. 
 
 ### Platform Features
+![alt text]([http://url/to/img.png](https://lh3.googleusercontent.com/LcweB7P68qWeaXDLmjq2jUltu5MUxL7g4VWYMYrcffJN84zrEJeWVs65nmkW1Fk8WphVAYnmC0GNioDjCGXd9v_hR954oK_K5fIQbjIpw3HTmOhlVyyhzANmwPX_pfyYBjBJANlU))
 BlinkToText offers a range a tools to help paralyzed people communicate. Below is an explanation of the platform’s main features.
 
 
