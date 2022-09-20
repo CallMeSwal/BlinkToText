@@ -1,7 +1,7 @@
 # BlinkToText - Python Desktop for sending Eye Blinks via SMS
 
 ## BlinkToText is an open source, free, and easy to use software program that converts eye blinks to text. Demo: https://youtu.be/2b78errgVOU.
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CFAUK3HcKwg/0.jpg)](https://www.youtube.com/watch?v=CFAUK3HcKwg)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2b78errgVOU/0.jpg)](https://www.youtube.com/watch?v=2b78errgVOU)
 
 ### Introduction
 Paralyzed people lack the ability to control muscle function in one or more muscle groups. The condition can be caused by stroke, ALS, multiple sclerosis, and many other diseases. Locked-in Syndrome (LIS) is a form of paralysis where patients have lost control of nearly all voluntary muscles. These people are unable to control any part of their body, besides eye movement and blinking. Due to their condition, these people are unable to talk, text, and communicate in general. Even though people that have LIS are cognitively aware, their thoughts and ideas are locked inside of them. These people depend on eye blinks to communicate. They rely on nurses and caretakers to interpret and decode their blinking. Whenever LIS patients do not have a person to read their eye blinks available, they have no means of self expression.  
