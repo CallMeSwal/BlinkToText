@@ -1,7 +1,6 @@
 # BlinkToText - Python Desktop for sending Eye Blinks via SMS
 
 ## BlinkToText is an open source, free, and easy to use software program that converts eye blinks to text. Demo: https://youtu.be/2b78errgVOU.
-
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2b78errgVOU/0.jpg)](https://www.youtube.com/watch?v=2b78errgVOU)
 
 ### Introduction
