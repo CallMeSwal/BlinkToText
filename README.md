@@ -23,7 +23,7 @@ Blink to Text is free open source software. It is distributed under the MIT Perm
 ### Platform Features
 BlinkToText offers a range a tools to help paralyzed people communicate. Below is an explanation of the platform’s main features.
 
-![plot](./readme_img/guiOverview.PNG)
+![plot](./readme_img/1_guiOverview.PNG)
 
 [Figure 1: BlinkToText GUI]
 
