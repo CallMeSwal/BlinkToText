@@ -60,11 +60,11 @@ The message that a person is currently blinking is viewable in the Bottom Dialog
 
 [Figure 3: Adding Line to Dialog]
 
-####Recite button
+#### Recite button
 
 The program can recite text that the user records. When the user selects the Recite Button, the program recites all text in the Right and Bottom Browser Box. The program recites the notes in a female voice. The default voice can be changed. Most people find female synthesized voices warmer and more friendly than male synthesized voices[8]. Therefore, a female voice is BlinkToText’s default voice.
 
-####Predict Next Word
+#### Predict Next Word
 
 The software automatically predicts the next word that the user will blink. To save time, the user can automatically select this word.
 
