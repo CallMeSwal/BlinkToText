@@ -2,6 +2,8 @@
 
 ## BlinkToText is an open source, free, and easy to use software program that converts eye blinks to text. Demo: https://youtu.be/2b78errgVOU.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2b78errgVOU/0.jpg)](https://www.youtube.com/watch?v=2b78errgVOU)
+
 ### Introduction
 Paralyzed people lack the ability to control muscle function in one or more muscle groups. The condition can be caused by stroke, ALS, multiple sclerosis, and many other diseases. Locked-in Syndrome (LIS) is a form of paralysis where patients have lost control of nearly all voluntary muscles. These people are unable to control any part of their body, besides eye movement and blinking. Due to their condition, these people are unable to talk, text, and communicate in general. Even though people that have LIS are cognitively aware, their thoughts and ideas are locked inside of them. These people depend on eye blinks to communicate. They rely on nurses and caretakers to interpret and decode their blinking. Whenever LIS patients do not have a person to read their eye blinks available, they have no means of self expression.  
 
@@ -31,6 +33,7 @@ BlinkToText offers a range a tools to help paralyzed people communicate. Below i
 
 The software cycles through seven rows continuously. Users select a row by blinking. The software then cycles through each element in the selected row. The user can blink to select the highlighted element. If the user selects a character, the program appends the character to the Bottom Dialog Box. If the user selects a button, the program executes the button function. This system allows users to blink text in an intuitive way. Other attempts at BlinkToText software forced users to use Morse Code and other confusing systems to communicate.[10]
 
+![plot](./readme_img/2_demo.gif)
 
 [Figure 2: Selecting Character]
 
@@ -50,15 +53,17 @@ Users can use these body movements to trigger any of the button functions. Addit
 
 Everyone’s disability is different. Ideally, every disabled person would have a custom made solution for their problems. Unfortunately, this option is outside of the financial constraints of many families. BlinkToText offers a partially customizable system that works for most people.
 
+![plot](./readme_img/3_ui.png)
 
-[Figure 16: Customizing BlinkToText]
+[Figure 3: Customizing BlinkToText]
 
 #### Right Dialog Box
 
 The message that a person is currently blinking is viewable in the Bottom Dialog Box. Users can store previous messages in the Right Dialog Box with the Add Ln. Button.
 
+![plot](./readme_img/4_demo2.gif)
 
-[Figure 3: Adding Line to Dialog]
+[Figure 4a: Adding Line to Dialog]
 
 #### Recite button
 
@@ -68,8 +73,9 @@ The program can recite text that the user records. When the user selects the Rec
 
 The software automatically predicts the next word that the user will blink. To save time, the user can automatically select this word.
 
+![plot](./readme_img/5_demo3.gif)
 
-[Figure 4: BlinkToText Predicting Next Word]
+[Figure 4b: BlinkToText Predicting Next Word]
 
 #### SMS button
 
@@ -91,7 +97,7 @@ The program uses a facial training set to understand where certain points exist 
 
 The library outputs a 68 point plot on a given input image.
 
-
+![plot](./readme_img/6_map.png)
 
 [3, Figure 5: Dlib Facial Landmark Plot]
 
@@ -101,17 +107,17 @@ In Real Time Eye Blinking Using Facial Landmarks[4], Soukupová and Čech derive
 
 Based on Figure 6, the eye aspect ratio can be defined by the below equation.
 
-
+![plot](./readme_img/7_eye.png)
 
 [4, Figure 6: Eye Facial Landmarks]
 
-
+![plot](./readme_img/9_formula.png)
 
 [4, Figure 7: Eye Aspect Ratio Equation]
 
 “The Eye Aspect Ratio is a constant value when the eye is open, but rapidly falls to 0 when the eye is closed.” [3] Figure 8 show a person’s Eye Aspect Ratio over time. The person’s eye blinks are obvious.
 
-
+![plot](./readme_img/10_eye_ratio.png)
 
 [4, Figure 8: Eye Aspect Ratio vs Time]
 
@@ -121,15 +127,21 @@ A program can determine if a person’s eyes are closed if the Eye Aspect Ratio 
 
 Frame differencing is another blink detection technique. Essentially, a program compares subsequent video frames to determine if there was any movement in a select eye region.
 
-In most programs, the first step is to detect any faces in a video feed using a face detector, such as the Viola-Jones Face Detector. The face detector returns a bounding box of an area that contains a face, as seen in Figure 9.[Figure 9: Face Detector Placing Bounding Box Over Face]
+In most programs, the first step is to detect any faces in a video feed using a face detector, such as the Viola-Jones Face Detector. The face detector returns a bounding box of an area that contains a face, as seen in Figure 9.
+
+![plot](./readme_img/11_cascade1.png)
+
+[Figure 9: Face Detector Placing Bounding Box Over Face]
 
 The program then analyses this region of interest for eyes using similar detection tools. The program places a bounding box on any regions of interest.
+
+![plot](./readme_img/12_cascade2.png)
 
 [Figure 10: Eye Detector Placing Bounding Boxes Over Eyes]
 
 The program then compares the difference between eye region of interests in subsequent frames.[5] Any different pixels are plotter on a separate image. Figure 11 demonstrates a program using frame differencing to detect hand movement. A Binary Threshold and Gaussian Blur filter the images.
 
-
+![plot](./readme_img/13_handmove.gif)
 
 [Figure 11: Frame Differencing Program Detecting Hand Movement]
 
@@ -138,7 +150,11 @@ Using pupils to detect eye blinks has a similar process to frame differencing. O
 
 The program will search the eye region of interest for pupils. Before, analyzing the region, the program will ensure that their is a high contrast between objects in the image. Therefore, the program converts the region to gray-scale and runs a Guassian blur. The image filtering is conducted only on this region instead of the whole image for efficiency purposes. The program runs a Circle Hough transform on the area. If the software can detect a circle roughly in the center of the region and that circle takes up roughly the correct amount of area,  the software assumes that the circle is the pupil. If the pupil is detected, then the software can assume that the eye is open[6].
 
+![plot](./readme_img/14_cascade3.png)
+
 [Figure 12: Circle Hough Transform Detecting Pupil]
+
+![plot](./readme_img/15_cascade4.png)
 
 [Figure 13: Circle Hough Transform Detecting Pupil on User With No Glasses]
 
