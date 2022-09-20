@@ -178,10 +178,10 @@ The relationship between distance and the accuracy of the blink detector was cal
 #### Words Per Minute
 
 [Table 1: Chart of WPM series]
-
-Test #1	Test #2	Test #3	Test #4	Test #5
-Number of Words Blinked in 5 Minutes	10	11	10	10	8
-WPM	2	2.2	2	2	1.6
+|                                      | Test #1       | Test #2 | Test #3 | Test #4 | Test #5 |
+| ------------------------------------ |:-------------:| -------:| -------:| -------:| -------:|
+| Number of Words Blinked in 5 Minutes | 10            | 11      | 10      | 10      | 8       |
+| WPM                                  | 2             | 2.2     | 2       | 2       | 1.6     |
 
 [Figure 14: Scatter-Plot of Words Per Minute Series]
 
@@ -204,7 +204,7 @@ Distance From Screen
 
 [Figure 15: Graph of Distance Vs. Blink Error]
 
-#### Hardware
+### Hardware
 
 BlinkToText was primarily developed and tested on a 64-bit Windows 8 Dell Inspiron Laptop. The laptop has an Intel Core i5-4200U CPU @ 1.60GHz 2.30 GHz and 4.00 GB RAM. The program uses the laptop's integrated webcam for video capture.
 
