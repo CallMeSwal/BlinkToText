@@ -187,20 +187,17 @@ The relationship between distance and the accuracy of the blink detector was cal
 
 WPMave=1.96, On average user could blink 1.96 words per minute.
 
-Distance Vs. Blink Error
+#### Distance Vs. Blink Error
 
-Distance From Screen
-(cm)	Total Number of Intentional Blinks
-(Blinks)	Number of Intentional Blinks Detected
-(Blinks)	Blink Error (%)
-30	20	20	0.00
-60	20	20	0.00
-90	20	16	20.00
-120	20	13	35.00
-150	20	9	55.00
-180	20	11	45.00
 [Table 2: Chart of Distance Vs. Blink Error Table]
-
+| Distance From Screen (cm) | Total Number of Intentional Blinks (Blinks) | Number of Intentional Blinks Detected (Blinks) | Blink Error (%) |
+| ------------------------- |:-------------------------------------------:| ----------------------------------------------:| ---------------:|
+| 30                        | 20                                          | 20                                             | 0.00            |
+| 60                        | 20                                          | 20                                             | 0.00            |
+| 90                        | 20                                          | 16                                             | 20.00           |
+| 120                       | 20                                          | 13                                             | 35.00           |
+| 150                       | 20                                          | 9                                              | 55.00           |
+| 180                       | 20                                          | 1                                              | 45.00           |
 
 [Figure 15: Graph of Distance Vs. Blink Error]
 
